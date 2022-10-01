@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+    <link rel="stylesheet" href="./css/assinar.css">
+    <title>Assinar</title>
+</head>
+
+<body>
+    <header>
+        <span id="home"></span>
+        <nav class="layout-cabecalho">
+            <a href="index.html"><img src="./img/logo.png" class="logo" alt="Logo da Academia"></a>
+                <div class="cabecalho-grid">
+                    <a href="#">IMC</a>
+                    <a href="./index.html" target="_blank">Início</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container layout-container" > 
+        <main class="container bloco-imc">
+            <div class="row caixa-imc">
+                <div class="col-md-8 col-sm-12 bloco-superior">
+                    <h1>Descubra seu IMC</h1>
+                    <p>O IMC (Índice de Massa Corporal) é um cálculo que ajuda a avaliar se a pessoa está dentro do seu peso ideal, de acordo com a altura. </p>
+                </div>
+                <div class="col-md-8 col-sm-12 layout-calculadora">
+                    <input type="number" id="altura-digitada" placeholder="Digite sua altura">
+                    <input type="number" id="peso-digitado" placeholder="Digite seu peso">
+                </div>
+                <div class="row caixa-imc">
+                    <div class="resultado-imc">
+                        <div>
+                            <p id="res-sit" class="resultado-teste"></p>
+                        </div>
+                        <div>
+                            <p id="res-imc" class="resultado-teste">
+                                <a id="botao-resultado" href="#">Resultado</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <form action="#"  class="container formulario">
+            <h3>Formulário de Matrícula</h3>
+            <div class="grid-formulario">
+                <div class="bloco-formulario">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input id="nome" type="text" class="form-control" placeholder="Digite seu nome" required="true" maxlength="50">
+                </div>
+                <div class="bloco-formulario">
+                    <label for="dataNascimento" class="form-label">Data de Nascimento:</label>
+                    <input id="dataNascimento" type="date" class="form-control" required="true">
+                </div>
+              
+            </div>
+            <div class="bloco-formulario">
+                <label for="email" class="form-label">Email:</label>
+                <input id="email" type="email" class="form-control" placeholder="Digite seu email" required="true" maxlength="40">
+            </div>
+            <div class="bloco-formulario">
+                <label for="observacao" class="form-label">Observações:</label>
+                <textarea name="observacao" id="observacao" cols="30" rows="10" placeholder="Observações adicionais"></textarea>
+            </div>
+            <div class="box-submit">
+                <input class="botao-estilo" id="botao-enviar" type="submit" >
+                <input class="botao-estilo" id="botao-reset" type="reset" >
+            </div>
+        </form>
+    </div>   
+
+    <div class="fundo-footer">
+        <footer>
+            <div class="caixas">
+                <h4>Início</h4>
+                <ul>
+                   <li><a href="./index.html">Página Inicial</a></li>
+                </ul>
+            </div>
+            <div class="caixas">
+                <h4>Contato</h4>
+                <ul>
+                   <li><a href="#">Email</a></li>
+                   <li><a href="tel:+5524992000000">Telefone</a></li>
+                   <li><a href="#">Instagram</a></li>
+                   <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="caixas">
+                <h4>Sobre nós</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos ipsa harum esse fuga voluptates blanditiis omnis! Recusandae eius iure cupiditate quae, veritatis iste corporis esse aperiam repudiandae, tenetur maxime.</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script-imc.js"></script>
+</body>
+</html>

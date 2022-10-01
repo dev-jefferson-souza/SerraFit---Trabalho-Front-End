@@ -1,0 +1,44 @@
+
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color: aqua;
+}
+
+.acessoGit {
+  display: flex;
+  gap: 10px;
+}
+
+section img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: brown;
+}
+.line {
+  width: 568px;
+  height: 0px;
+
+  border: 1px solid black;
+  margin: 8px auto;
+}
+
+.raiz {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+}
+
+.raiz a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,123 @@
+*{
+      /* Var - Colors */
+      --branco: hsl(0, 0%, 100%);
+      --dourado: hsl(51, 100%, 50%);
+      --laranja: hsl(36, 100%, 50%);
+      --preto: hsl(0, 0%, 0%);
+}
+
+.logo{
+    width: 80px;
+}
+
+/* Cabecalho */
+.cabecalho-grid{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    color: white;
+}
+.cabecalho-grid > a{
+    transition: 0.3s;
+    color: var(--dourado);
+}
+.cabecalho-grid > a:hover, .cabecalho-grid > a:focus, .cabecalho-grid > a:active  {
+    font-weight: 700;
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+
+/* Removendo Links do Cabecalho (Se Tornarão Botões) */
+@media (max-width: 768px ) {
+    .layout-cabecalho{
+        justify-content: center;
+    }
+    .cabecalho-grid{
+        display: none;
+    }
+}
+
+/* Sócios */
+.socios > h3{
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+.socio__perfil{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65px;
+}
+.icon-colaborador{
+    width: 80px;
+    border-radius: 50%;
+}
+.socio__perfil a{
+    margin: 10px 0px 0px 0px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+@media (max-width: 768px ) {
+    .icon-colaborador{
+        width: 60px;
+        border-radius: 50%;
+    }
+    .socio__perfil{
+        width: 50%;
+    }
+    .socio__perfil a{
+        width: 100px;
+    }
+    .socios > h3{
+        font-size: 2rem;
+    }
+}
+
+
+/* Atividades */
+.h3-centralizado{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.75rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 1.75rem;
+    width: fit-content;
+   padding: 0.5rem 2rem;
+    border-radius: 6px;
+    background-color: var(--dourado);
+
+}
+
+
+
+/* Rodapé */
+.caixas h4{
+    color: var(--dourado);
+    margin-bottom: 20px;
+}
+
+.caixas ul li{
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.caixas ul li a{
+    transition: 0.3s;
+    color: var(--branco);
+}
+
+.caixas ul li a:hover, .caixas ul li a:focus{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--laranja);
+}
+
+.caixas p{
+    text-align: justify;
+}

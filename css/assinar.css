@@ -1,0 +1,217 @@
+*{
+    /* Var - Colors */
+    --branco: hsl(0, 0%, 100%);
+    --branco-borda: hsl(0, 0%, 94%); 
+    --dourado: hsl(51, 100%, 50%);
+    --laranja: hsl(36, 100%, 50%);
+    --preto: hsl(0, 0%, 0%);
+    --vermelho-escuro:hsl(0, 83%, 40%);
+    --vermelho: hsl(0, 83%, 55%);
+    --verde: rgb(42, 185, 42);
+}
+
+.layout-container{
+    padding-top: 8rem;
+}
+
+/* Calculadora IMC */
+.layout-calculadora{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    max-width: 12em;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+.bloco-imc{
+    position: static;
+    display: flex;
+    text-align: center;
+    border: 1px solid var(); 
+    padding: 2rem;  
+    max-width: 720px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px 13px var(--branco-sombra);
+}
+
+.bloco-superior > h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.row-resultados{
+    width: 100%;
+}
+.caixa-imc{
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width:768px) {
+    .caixa-imc{
+        margin: 0px 0px 0px 0px;
+    }
+    .resultado-imc{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .row-resultados{
+        width: fit-content;
+        min-width: 300px;
+        margin: auto;
+    }
+}
+.layout-calculadora > input{
+    padding: 4px;
+    background-color: var(--branco);
+    border: 1px solid var(--branco-sombra);
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 3px var(--branco-sombra);
+    transition: 0.5s;
+}
+.layout-calculadora > input:focus{
+    background-color: var(--dourado);
+    color: black;
+}
+.resultado-imc{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    text-align: center;
+    width: 100%;
+}
+.resultado-teste{
+    width: fit-content;
+    margin: auto;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px 3px var(--branco-sombra);
+}
+
+#res-imc > a{
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dourado);
+}
+
+#res-imc > a:hover, #res-imc > a:active, #res-imc > a:focus{
+    color: var(--laranja);
+}
+
+@media (max-width:767px) {
+    .resultado-imc{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .layout-calculadora > input{
+       width: 230px;
+    }
+    
+}
+
+/* Formulario */
+.formulario{
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 1.25rem;
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px 13px var(--branco-sombra);
+    align-items: center;
+    justify-items: center;
+    max-width: 720px;
+}
+
+.bloco-formulario{
+    margin: 2rem 0px 0px 0px;
+}
+.formulario > h3{
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+.grid-formulario{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1rem;
+}
+
+@media (max-width:768px) {
+    .grid-formulario{
+        grid-template-columns: 1fr;
+    }
+    #dataNascimento{
+        width: fit-content;
+    }
+}
+
+.form-control{
+    border: 1px solid var(--branco);
+    box-shadow: 0px 0px 5px 3px var(--branco-sombra);
+}
+
+#observacao{
+    height: 200px;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--branco-borda);
+    border-radius: 6px;
+    border: 1px solid var(--branco);
+    box-shadow: 0px 0px 5px 3px var(--branco-sombra);
+   
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+.box-submit{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
+    width: 100%;
+}
+.botao-estilo{
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+#botao-reset{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: 1px solid var(--branco);
+}
+
+#botao-reset:hover, #botao-reset:focus, #botao-reset:active{
+    background-color: var(--vermelho-escuro)
+}
+
+#botao-enviar{
+    color: var(--branco);
+    background-color: var(--dourado);
+    border: 1px solid var(--branco);
+}
+
+#botao-enviar:hover, #botao-enviar:focus, #botao-enviar:active{
+    background-color: var(--verde);
+}
+@media (max-width: 510px) {
+    .box-submit{
+        justify-content: center;
+    }
+}

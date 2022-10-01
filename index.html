@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+    <title>SerraFit</title>
+</head>
+
+<body>
+    <header>
+        <span id="home"></span>
+        <nav class="layout-cabecalho">
+            <a href="./index.html"><img src="./img/logo.png" class="logo" alt="Logo da Academia"></a>
+                <div class="cabecalho-grid">
+                    <a href="assinar.html">Assinar</a>
+                    <a href="#planos">Planos</a>
+                </div>
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="container">
+        <!-- Banners -->
+        <div class="row">
+            <div id="demo" class="col-12 carousel slide" data-ride="carousel">  
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner1.png" alt="Anúncio de mensalidade da academia. Valor R$55,00">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner2.png" alt="A melhor academiade Petrópolis">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner3.png" alt="Desconto de 10% na loja física de roupas ( somente para ex-residentes).">
+                    </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+         
+        <!-- Beneficios -->
+        <main class="layout-beneficios">
+            <h1>Muito além de estética, a sua saúde importa!</h1>
+            <p id="planos">A musculação melhora o condicionamento cardiorrespiratório, diminui a quantidade de gordura, auxilia o emagrecimento, diminui o risco de diabetes, aumenta a autonomia em idosos e garante mais disposição física. Além de todos esses benefícios, a musculação também melhora a qualidade do sono.</p>
+            
+            <!-- Planos -->
+            <h3 class="h3-centralizado">Planos</h3> 
+            <div class="container layout-planos">
+                <img class="imagem-planos" src="./img/preco1.png" alt="Preço R$55,00">
+                <img class="imagem-planos" src="./img/preco2.png" alt="Preço R$75,00">
+            </div>
+
+            <!-- Planos Carrosel -->
+            <div id="demo2" class="col-12 carousel slide" data-ride="carousel">  
+                <ul class="carousel-indicators">
+                    <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo2" data-slide-to="1"></li>
+                </ul>
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/preco1.png" alt="Anúncio de mensalidade da academia. Valor R$55,00">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/preco2.png" alt="A melhor academiade Petrópolis">
+                    </div>
+                </div>
+        
+                <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo2" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </main>        
+    </div>   
+    
+    <!-- Atividades -->
+    <h3 class="h3-centralizado">Atividades</h3> 
+    <div class="atividades-main">         
+        <div class="atv">
+            <img src="img/natacao.jpg" alt="Natação">
+            <h2>Natação</h2>
+            <p>A natação ajuda na coordenação motora, trabalha o sistema cardiovascular e respiratório, auxiliando na prevenção de doenças coronárias e reumáticas. Promove aumento de musculatura, auxilia na diminuição percentual de gordura e auxilia na prevenção e tratamento de celulite.</p>
+        </div>
+        <div class="atv">
+            <img src="img/ginastica.jpg" alt="Ginástica">
+            <h2>Ginástica</h2>
+            <p>A ginástica localizada é uma forma de exercicio que consiste em uma variedade de movimentos simples, muitas vezes rítmicos. Eles são destinados a aumentar a força e a flexibilidade corporal com movimentos como flexões e saltos usando apenas do peso do corpo.</p>
+        </div>
+        <div class="atv">
+            <img src="img/pilates.jpg" alt="Pilates">
+            <h2>Pilates</h2>
+            <p>Método composto por alongamentos e exercícios físicos que utilizam o peso do próprio corpo em sua execução. O Pilates apresenta resultados rápidos e duradouros na correção postural, na tonificação muscular e na estimulação do sistema respiratório.
+            </p>
+        </div>          
+        <div class="atv">
+            <img src="img/musculacao.jpg" alt="Musculação">
+            <h2>Musculação</h2>
+            <p>Nas academia <strong>SerraFit</strong> você conta com os profissionais mais gabaritados, programas exclusivos de musculação e aulas coletivas para cuidar de sua saúde física e bem-estar. Além de máquinas importadas que o auxiliarão nos seus exercícios.</p>
+        </div>
+        <div class="atv">
+            <img src="img/boxe.jpg" alt="Boxe">
+            <h2>Boxe</h2>
+            <p>O boxe é um esporte que traz um maior número de benefícios físicos, psicológicos. Ele ajuda na socialização do aluno, tem vantagens endógenas com a melhora da força muscular, resistência cardiorespiratória e flexibilidade.</p>
+        </div>
+        <div class="atv">
+            <img src="img/danca.jpg" alt="Dança">
+            <h2>Dança</h2>
+            <p>Colocar o corpo para mexer ao som de uma música agradável melhora o sistema cardiovascular, aumenta o fluxo sanguíneo, favorece a respiração correta e também ajuda nas defesas do organismo. </p>
+        </div> 
+     </div>
+
+    <!-- Assinar -->
+    <div class="container layout-assinar">
+        <a href="./assinar.html" target="_blank">Assinar</a>
+    </div>
+
+    <!-- Socios -->
+     <div class="container">
+        <section class="container socios">
+            <h3>Sócios da empresa</h3>
+            <div class="socios-grid">
+                <div class="socio__perfil">
+                    <a href="https://github.com/bad7k" target="_blank">
+                        <img class="icon-colaborador" src="https://avatars.githubusercontent.com/u/97715277?v=4">
+                        Jefferson
+                    </a>
+                </div>
+                <div class="socio__perfil">
+                    <a href="https://github.com/PCTSP" target="_blank">
+                       <img class="icon-colaborador" src="https://avatars.githubusercontent.com/u/107277351?s=400&u=0d4970f4ad7467f813b7e31a9db61dd2f601a65a&v=4">
+                       Pedro
+                    </a>
+                </div>
+                <div class="socio__perfil">
+                    <a href="https://github.com/JottaEnnie" target="_blank">
+                        <img class="icon-colaborador" src="https://avatars.githubusercontent.com/u/111091371?v=4">
+                        Juan
+                    </a>
+                </div>
+                <div class="socio__perfil">
+                    <a href="https://github.com/manuacg" target="_blank">
+                        <img class="icon-colaborador" src="https://avatars.githubusercontent.com/u/111091525?v=4">
+                        Manuela
+                    </a>
+                </div>
+                <div class="socio__perfil">
+                    <a href="https://github.com/MatheusTavares94" target="_blank">
+                        <img class="icon-colaborador" src="https://avatars.githubusercontent.com/u/110794051?v=4">
+                        Matheus
+                    </a>
+                </div>
+            </div>
+        </section>
+     </div>
+
+    <!-- Rodapé -->
+    <div class="fundo-footer">
+        <footer>
+            <div class="caixas">
+                <h4>Início</h4>
+                <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#planos">Planos</a></li>
+                   <li><a href="./assinar.html" target="_blank">Assinar</a></li>
+                </ul>
+            </div>
+            <div class="caixas">
+                <h4>Contato</h4>
+                <ul>
+                   <li><a href="#">Email</a></li>
+                   <li><a href="tel:+5524992000000">Telefone</a></li>
+                   <li><a href="#">Instagram</a></li>
+                   <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="caixas">
+                <h4>Sobre nós</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos ipsa harum esse fuga voluptates blanditiis omnis! Recusandae eius iure cupiditate quae, veritatis iste corporis esse aperiam repudiandae, tenetur maxime.</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
