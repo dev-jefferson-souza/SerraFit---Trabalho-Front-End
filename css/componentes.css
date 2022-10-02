@@ -1,17 +1,18 @@
-*{
-      /* Var - Colors */
-      --branco: hsl(0, 0%, 100%);
-      --dourado: hsl(51, 100%, 50%);
-      --laranja: hsl(36, 100%, 50%);
-      --preto: hsl(0, 0%, 0%);
+* {
+    /* Var - Colors */
+    --branco: hsl(0, 0%, 100%);
+    --dourado: hsl(51, 100%, 50%);
+    --laranja: hsl(36, 100%, 50%);
+    --preto: hsl(0, 0%, 0%);
+    --branco-sombra: hsla(0, 0%, 0%, 0.1)
 }
 
-.logo{
+.logo {
     width: 80px;
 }
 
 /* Cabecalho */
-.cabecalho-grid{
+.cabecalho-grid {
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 30px;
@@ -20,67 +21,119 @@
     font-size: 18px;
     color: white;
 }
-.cabecalho-grid > a{
+
+.cabecalho-grid>a {
     transition: 0.3s;
     color: var(--dourado);
 }
-.cabecalho-grid > a:hover, .cabecalho-grid > a:focus, .cabecalho-grid > a:active  {
+
+.cabecalho-grid>a:hover,
+.cabecalho-grid>a:focus,
+.cabecalho-grid>a:active {
     font-weight: 700;
     color: var(--laranja);
     text-decoration: none;
 }
 
+#botao-menu {
+    display: none;
+}
 
 /* Removendo Links do Cabecalho (Se Tornarão Botões) */
-@media (max-width: 768px ) {
-    .layout-cabecalho{
-        justify-content: center;
-    }
-    .cabecalho-grid{
+@media (max-width: 768px) {
+
+    .cabecalho-grid {
         display: none;
+        position: absolute;
+        width: 100%;
+        top: 5rem;
+        background-color: var(--preto);
+        height: auto;
+        z-index: 9999;
+        right: 0px;
+    }
+
+    #botao-menu {
+       
+        display: block;
+        padding: 0.5rem 1rem;
+        background-color: var(--preto);
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--preto);
+        border: 1px solid var(--preto);
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.75s;    
+        color: var(--laranja);     
+        font-size: 1.5rem;
+    }
+    #botao-menu:hover{
+        transition: 0.75s;
+    }
+
+    #barra-nav.ativar .cabecalho-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        transition: 0.75s;
+    }
+
+    .cabecalho-grid a {
+        padding: 1rem ;
+        text-align: center;
+        border: 0.5px solid var(--dourado);
+        border-width: thin;
+        
+        
     }
 }
 
 /* Sócios */
-.socios > h3{
+.socios>h3 {
     font-size: 2.75rem;
     font-weight: 600;
 }
 
-.socio__perfil{
+.socio__perfil {
     display: flex;
     flex-wrap: wrap;
     width: 65px;
 }
-.icon-colaborador{
+
+.icon-colaborador {
     width: 80px;
     border-radius: 50%;
 }
-.socio__perfil a{
+
+.socio__perfil a {
     margin: 10px 0px 0px 0px;
     color: var(--preto);
     text-decoration: none;
 }
 
-@media (max-width: 768px ) {
-    .icon-colaborador{
+@media (max-width: 768px) {
+    .icon-colaborador {
         width: 60px;
         border-radius: 50%;
     }
-    .socio__perfil{
+
+    .socio__perfil {
         width: 50%;
     }
-    .socio__perfil a{
+
+    .socio__perfil a {
         width: 100px;
     }
-    .socios > h3{
+
+    .socios>h3 {
         font-size: 2rem;
     }
 }
 
 
 /* Atividades */
-.h3-centralizado{
+.h3-centralizado {
     text-align: center;
     font-weight: 600;
     font-size: 2.75rem;
@@ -88,36 +141,47 @@
     margin-top: 5rem;
     margin-bottom: 1.75rem;
     width: fit-content;
-   padding: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 6px;
     background-color: var(--dourado);
 
 }
 
+/*Confirmação*/
+.confirmarcao__box > h2{
+    font-size: 3rem;    
+}
+@media (max-width: 768px){
+    .confirmarcao__box > h2{
+        font-size: 2rem;
+    }
+}
+
 
 
 /* Rodapé */
-.caixas h4{
+.caixas h4 {
     color: var(--dourado);
     margin-bottom: 20px;
 }
 
-.caixas ul li{
+.caixas ul li {
     margin: 10px 0px;
     list-style: none;
 }
 
-.caixas ul li a{
+.caixas ul li a {
     transition: 0.3s;
     color: var(--branco);
 }
 
-.caixas ul li a:hover, .caixas ul li a:focus{
+.caixas ul li a:hover,
+.caixas ul li a:focus {
     font-weight: 700;
     text-decoration: none;
     color: var(--laranja);
 }
 
-.caixas p{
+.caixas p {
     text-align: justify;
 }
