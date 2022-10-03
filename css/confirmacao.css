@@ -1,0 +1,55 @@
+*{
+    /* Var - Colors */
+    --branco-sombra: hsla(0, 0%, 0%, 0.1);
+    --branco: hsl(0, 0%, 100%);
+    --branco-borda: hsl(0, 0%, 94%); 
+    --preto: hsl(0, 0%, 0%);
+    --dourado: hsl(51, 100%, 50%);
+    --laranja: hsl(36, 100%, 50%);
+  }
+.layout-confirmacao{    
+    border: 1px solid var(--branco-borda);
+    box-shadow: 0px 0px 15px 13px var(--branco-sombra);
+    border-radius: 8px;
+    padding: 7.5rem 2rem 2rem;
+    display: block;
+
+}
+h2{
+  font-weight: 700;
+}
+
+.confirmacao__box p{
+  font-size: 2rem;
+}
+
+/*Confirmação*/
+
+
+
+.confirmacao__box{
+  padding: 10rem 4rem;
+  min-height: 600px;
+}
+
+.confirmacao__box > h2{
+  font-size: 3rem;    
+}
+
+.confirmacao__box > p{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px){
+  .confirmacao__box{
+    padding: 4rem 0.5rem;
+    min-height: fit-content;
+  }
+  .confirmacao__box > h2{
+      font-size: 2.5rem;
+  }
+  .confirmacao__box > p{
+      font-size: 1.25rem;
+    }
+}
+
