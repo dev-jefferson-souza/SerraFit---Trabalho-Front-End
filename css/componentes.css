@@ -147,17 +147,6 @@
 
 }
 
-/*Confirmação*/
-.confirmarcao__box > h2{
-    font-size: 3rem;    
-}
-@media (max-width: 768px){
-    .confirmarcao__box > h2{
-        font-size: 2rem;
-    }
-}
-
-
 
 /* Rodapé */
 .caixas h4 {
