@@ -91,6 +91,7 @@
     transition: 0.5s;
 }
 #botao-total{
+    cursor: pointer;
     box-shadow: 0px 0px 5px 3px var(--branco-sombra);
 
 }
@@ -101,6 +102,13 @@
     font-weight: 700;
     text-decoration: none;
     color: var(--dourado);
+}
+#plano{
+    cursor: pointer;
+}
+
+#dataNascimento{
+    cursor: pointer;
 }
 
 #res-sit{
@@ -213,6 +221,11 @@ textarea:focus, input:focus, select:focus {
     grid-row: 1fr 1fr;
     gap: 1rem;
     font-size: 1rem;
+}
+
+.bloco-checkbox > input{
+    cursor: pointer;
+    border: 1px solid var(--branco-borda);
 }
 
 .box-submit{
