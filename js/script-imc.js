@@ -1,6 +1,5 @@
 
 
-
 let botao = document.getElementById('botao-resultado');
 botao.addEventListener('click', calcularImc);
 
